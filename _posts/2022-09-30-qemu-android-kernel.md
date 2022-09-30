@@ -7,7 +7,7 @@ categories: Linux
 tags:	Linux
 ---
 
-# Setup Qemu for arm64 android kernel
+# Setup Qemu for arm64 android kernel running 
 
 ## Fetch the android kernel
 google provide the manifest to fetch the kernel soruce, corresponding config files and corss compile toolchain
