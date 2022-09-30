@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux 文件系统读写放大作用的定量分析"
+title:  "Linux fs enlarge effects"
 date:   2022-09-31 08:43:59
 author: half cup coffee
 categories: Linux
