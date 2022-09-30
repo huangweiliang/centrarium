@@ -12,7 +12,7 @@ exclude:
 title: Half Cup of Coffee, 我的半杯咖啡
 subtitle: "reading, writing and enjoy coffee"
 email: huw6szh@gmail.com
-name: huang weiliang
+name: Huang weiliang
 description: >
   A simple yet classy theme blog.
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -93,7 +93,7 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username: Ben Centra
+    username: huang weiliang
     url: https://www.linkedin.com/in/weiliang-huang-553425a9/
     desc: Connect with me on LinkedIn
     share: true
@@ -186,6 +186,6 @@ protocols:
 
     twitter_image: "/assets/logo.png"
 
-    os_repo: "https://github.com/bencentra/centrarium.com"
-    os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
+    #os_repo: "https://github.com/bencentra/centrarium.com"
+    #os_rcs_type: "git"
+    #os_src: "git@github.com:bencentra/centrarium.com.git"
