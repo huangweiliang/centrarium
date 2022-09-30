@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setup Qemu for arm64 android kernel"
+title:  "Setup Qemu for arm64 android kernel running"
 date:   2022-09-30 08:43:59
 author: half cup coffee
 categories: Linux
