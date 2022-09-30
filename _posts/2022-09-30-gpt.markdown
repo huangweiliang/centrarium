@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "GPT partition table introduction"
+title:  "GPT  table introduction"
 date:   2022-09-31 17:43:59
 author: half cup coffee
 categories: Linux
 tags:	Linux
 ---
 
-# GPT partition table introduction
+# GPT table introduction
 
 ## MBR分区表：
 
