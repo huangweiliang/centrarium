@@ -43,3 +43,23 @@ The table base addresses are specified in the Translation Table Base Registers (
 kernel space can be mapped to the most significant area of memory and the Virtual Address space associated with each application mapped to the least significant area of memory. However, both of these are mapped to a much smaller Physical Address space.
 
 ![Crepe](/assets/cache-tlb-3.png)
+
+## Translating a Virtual Address to a Physical Address
+
+There are several information we shall know:
+Physical memory is used by page by page.  The DRAM which we call main memory is spited piece by piece which each piece is 4KB typically. (it is configurable, but typically 4KB).  So there is a concept to index the physical memory is by page.  
+
+![Crepe](/assets/cache-tlb-4.png)
+
+These 2 address space has its own page table.  So 3 steps to do the translation:
+	1. Decide the page table base address
+	2. Find the index in the table
+	3. Get the physical address
+    
+    
+In practice, an OS can further divide a large section of virtual memory into smaller pages. For
+a second-level table, the first-level descriptor contains the physical base address of the
+second-level page table. The Physical Address that corresponds to the Virtual Address requested
+by the processor, is found in the second-level descriptor.
+
+![Crepe](/assets/cache-tlb-5.png)
