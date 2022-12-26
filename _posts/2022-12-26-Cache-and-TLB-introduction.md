@@ -52,11 +52,12 @@ Physical memory is used by page by page.  The DRAM which we call main memory is 
 ![Crepe](/assets/cache-tlb-4.png)
 
 These 2 address space has its own page table.  So 3 steps to do the translation:
-	1. Decide the page table base address
-	2. Find the index in the table
-	3. Get the physical address
+
+`Decide the page table base address`
+`Find the index in the table`
+`Get the physical address`
     
-    
+
 In practice, an OS can further divide a large section of virtual memory into smaller pages. For
 a second-level table, the first-level descriptor contains the physical base address of the
 second-level page table. The Physical Address that corresponds to the Virtual Address requested
