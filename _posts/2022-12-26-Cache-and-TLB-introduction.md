@@ -9,7 +9,7 @@ tags:	Linux
 
 # What is Cache ?  
 
-See this description from ARM document:
+See this description from [ARM document]:
 
 A cache is a small, fast block of memory that sits between the core and main memory. It holds copies of items in main memory. Accesses to the cache memory occur significantly faster than those to main memory. Whenever the core reads or writes a particular address, it first looks for it in the cache. If it finds the address in the cache, it uses the data in the cache, rather than performing an access to main memory.
 
@@ -29,7 +29,7 @@ processor), with a 16-word (64 byte) cache line length:
 
 # TLB
 
-Here is a good explanation about TLB from https://www.geeksforgeeks.org/whats-difference-between-cpu-cache-and-tlb/: 
+Here is a good explanation about TLB from :  [TLB intro article]
 
 TLB: Translation Lookaside Buffer is required only if Virtual Memory is used by a processor. In short, TLB speeds up the translation of virtual addresses to a physical address by storing page-table in faster memory. In fact, TLB also sits between CPU and Main memory. Precisely speaking, TLB is used by MMU when a virtual address needs to be translated to a physical address. By keeping this mapping of virtual-physical addresses in fast memory, access to page-table improves. It should be noted that page-table (which itself is stored in RAM) keeps track of where virtual pages are stored in the physical memory. In that sense, TLB also can be considered as a cache of the page table. 
 
@@ -64,3 +64,10 @@ second-level page table. The Physical Address that corresponds to the Virtual Ad
 by the processor, is found in the second-level descriptor.
 
 ![Crepe](/assets/cache-tlb-5.png)
+
+
+
+[ARM document]: https://documentation-service.arm.com/static/5fbd26f271eff94ef49c7020?token=
+[TLB intro article]: https://www.geeksforgeeks.org/whats-difference-between-cpu-cache-and-tlb/
+[zhihu cache intro]: https://zhuanlan.zhihu.com/p/108425561
+
