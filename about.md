@@ -7,7 +7,7 @@ permalink: /about/
 <img src="{{ site.baseurl }}/assets/me.png" title="Profile Picture" class="profile">
 
 ```
-
+Huang, weiliang
 Working at Bosch US currently  
 
 - 15 years working experience on embedded software development.  
