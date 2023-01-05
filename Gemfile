@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://huangweiliang.github.io'
 gem 'jekyll'
 gem 'jekyll-archives'
 gem 'jekyll-sitemap'
