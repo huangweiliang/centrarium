@@ -9,6 +9,7 @@ tags:	Virtualization
 
 # x86 VT tech collection and understanding
 
+This page introduce the virtulization of X86 CPU and ARM.
 
 
 ![Crepe](/assets/x86-VT-tech/Slide1.PNG)
