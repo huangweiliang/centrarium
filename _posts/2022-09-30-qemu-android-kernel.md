@@ -48,6 +48,7 @@ It can be downloaded from https://releases.linaro.org/components/toolchain/binar
 
 For example, we put the toolchain under folder /media/data-nvm/temp/rootfs/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu,
 then run below commands:
+
 ~~~
  export PATH=/media/data-nvm/temp/rootfs/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin:$PATH
  export ARCH=arm64
@@ -63,6 +64,7 @@ make menuconfig
 ~~~
 
 Compile busybox:
+
 ~~~
 make
 make install
@@ -72,7 +74,7 @@ cp -ar gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/aarch64-linux-gnu/libc/
 ~~~
    
 Create rootfs
-1.
+
 ~~~
 cd _install
 mkdir dev etc lib sys proc tmp var home root mnt  
@@ -86,7 +88,8 @@ vi etc/profile
  LD_LIBRARY_PATH=/lib:/usr/lib:$LD_LIBRARY_PATH
  export PATH LD_LIBRARY_PATH
 ~~~
- 2.  
+
+
 ~~~
 vi etc/inittab
  ::sysinit:/etc/init.d/rcS
@@ -94,7 +97,8 @@ vi etc/inittab
  ::askfirst:-/bin/sh
  ::ctrlaltdel:/bin/umount -a -r
 ~~~
-3.
+
+
 ~~~
 vi etc/fstab
  #device  mount-point    type     options   dump   fsck order
@@ -105,7 +109,8 @@ vi etc/fstab
  debugfs /sys/kernel/debug debugfs defaults 0 0
  kmod_mount /mnt 9p trans=virtio 0 0
 ~~~
-   
+
+
 ~~~
 vi etc/fstab
  #device  mount-point    type     options   dump   fsck order
